@@ -14,7 +14,17 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
-
+const floatIn1 = {
+  in: {
+    y: 0
+  },
+  out: {
+    y: '200vh'
+  },
+}
+const floatTransition = {
+  duration: 2
+}
 function Homepage() {
  
   return (
@@ -30,7 +40,12 @@ function Homepage() {
       
      
         <div className="row">
-          <div className="homepagelinkbox  col-sm-4">
+          <motion.div initial="out"
+      animate="in"
+      exit="out"
+      variants={floatIn1}
+      transition={floatTransition}
+       className="homepagelinkbox  col-sm-4">
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
@@ -39,7 +54,7 @@ function Homepage() {
                 description=""
               />
             </NavLink>
-          </div>
+          </motion.div>
           <div className="homepagelinkbox col-sm-4">
             <a
               href="https://drive.google.com/file/d/13Vhmlja68U-fa6Tog0hKdzXqISS51x4f/view?usp=sharing"
