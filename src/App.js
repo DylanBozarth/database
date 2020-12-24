@@ -18,14 +18,16 @@ import UseFavicon from './components/useFavicon'
 import { Jsquizfocus } from "./components/jsquizfocus";
 import { Weatherappfocus } from "./components/weatherappfocus";
  import  {pizzaFocus} from './components/pizzaFocus'
+ import ParticlesBg from "particles-bg";
 function App() {
  UseFavicon('./images/Dicon.png')
   return (
     <Router>
       <motion.div className="wrapper">
         <Navigation />{" "}
+       
         <div className="backgroundclass">
-         
+          <ParticlesBg type="random" bg={true}/>
         </div>
          
           <AnimatePresence > {/* this is where we control animations */}

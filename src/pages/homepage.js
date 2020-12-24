@@ -23,13 +23,13 @@ const floatIn1 = {
   },
 }
 const floatTransition = {
-  duration: 1
+  duration: 1.5
 }
 const floatTransition2 = {
-  duration: 1.3
+  duration: 1.9
 }
 const floatTransition3 = {
-  duration: 1.8
+  duration: 2.1
 }
 function Homepage() {
  
