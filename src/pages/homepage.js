@@ -23,7 +23,13 @@ const floatIn1 = {
   },
 }
 const floatTransition = {
-  duration: 2
+  duration: 1
+}
+const floatTransition2 = {
+  duration: 1.3
+}
+const floatTransition3 = {
+  duration: 1.8
 }
 function Homepage() {
  
@@ -55,7 +61,12 @@ function Homepage() {
               />
             </NavLink>
           </motion.div>
-          <div className="homepagelinkbox col-sm-4">
+          <motion.div className="homepagelinkbox col-sm-4" 
+          initial="out"
+          animate="in"
+          exit="out"
+          variants={floatIn1}
+          transition={floatTransition2}>
             <a
               href="https://drive.google.com/file/d/13Vhmlja68U-fa6Tog0hKdzXqISS51x4f/view?usp=sharing"
               target="_blank"
@@ -67,8 +78,13 @@ function Homepage() {
                 className="homepagecardimg"
               />
             </a>
-          </div>
-          <div className="homepagelinkbox col-sm-4">
+          </motion.div>
+          <motion.div className="homepagelinkbox col-sm-4" 
+          initial="out"
+          animate="in"
+          exit="out"
+          variants={floatIn1}
+          transition={floatTransition3}>
             <NavLink to="/hireme">
               <Card
                 imgUrl="./images/contact.png"
@@ -77,7 +93,7 @@ function Homepage() {
                 description=""
               />
             </NavLink>{" "}
-          </div>
+          </motion.div>
           
         </div>
       
