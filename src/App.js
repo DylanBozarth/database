@@ -27,7 +27,7 @@ function App() {
         <Navigation />{" "}
        
         <div className="backgroundclass">
-          <ParticlesBg type="circle" bg={true}/>
+          <ParticlesBg type="thick" bg={true}/>
         </div>
          
           <AnimatePresence > {/* this is where we control animations */}
