@@ -19,6 +19,7 @@ import { Jsquizfocus } from "./components/jsquizfocus";
 import { Weatherappfocus } from "./components/weatherappfocus";
  import  {pizzaFocus} from './components/pizzaFocus'
  import ParticlesBg from "particles-bg";
+import { Todo } from "./components/todo";
 function App() {
  UseFavicon('./images/Dicon.png')
   return (
@@ -45,6 +46,7 @@ function App() {
               <Route path="/jsquiz" component={Jsquizfocus} />
               <Route path="/weather" component={Weatherappfocus} />
               <Route path="/pizza" component={pizzaFocus} />
+              <Route path="/todo" component={Todo} />
             </Switch>
           </AnimatePresence>
           
