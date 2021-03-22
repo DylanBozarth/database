@@ -5,11 +5,19 @@ let test = () => {
    console.log(input.value)
    output.innerHTML = input.value
 };
+function testIt() {
+    var addMe = input.value + 'YYESS'
+    output.innerHTML = addMe
+}
+//done with testing 
 function email() {
     let returnString = ''
-    let i = 0;
-for (i = 0; i < input.length; i++) {
- returnString.append('*');
-}
+    var str = input.value
+    if (returnString.length < str.length) {
+        returnString + '*'
+
+    }
 console.log(returnString)
 }
+
+
