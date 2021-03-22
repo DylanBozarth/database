@@ -11,13 +11,22 @@ function testIt() {
 }
 //done with testing 
 function email() {
-    let returnString = ''
-    var str = input.value
-    if (returnString.length < str.length) {
-        returnString + '*'
-
+  var str = input.value  
+  console.log(str.indexOf('@'))
+  if (str.indexOf('@') === -1) {
+        output.innerHTML = 'Use a real email, retard'
     }
-console.log(returnString)
+    else {
+        let returnString = ''
+    
+    for (i = 1; i < str.length; i++) {
+returnString += ('*')
+    }
+    output.innerHTML = str[0] + returnString
+    }
+    
+    
+ 
 }
 
 
