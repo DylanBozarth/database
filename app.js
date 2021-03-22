@@ -11,8 +11,8 @@ function testIt() {
 }
 //done with testing 
 function email() {
-  var str = input.value  
-  console.log(str.indexOf('@'))
+  let str = input.value  
+  let splitEmail = str.split("@")
   if (str.indexOf('@') === -1) {
         output.innerHTML = 'Use a real email, retard'
     }
@@ -22,7 +22,7 @@ function email() {
     for (i = 1; i < str.length; i++) {
 returnString += ('*')
     }
-    output.innerHTML = str[0] + returnString
+    output.innerHTML = str[0] + returnString + splitEmail[1]
     }
     
     
