@@ -29,6 +29,8 @@ returnString += ('*')
  
 }
 function getDomain() {
-    
+    let str = input.value 
+    let regex = /^.*[a-zA-Z]+.*$/i;
+    return regex.test(str);
 }
 
