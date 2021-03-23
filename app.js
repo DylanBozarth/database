@@ -28,6 +28,11 @@ returnString += ('*')
     
  
 }
+function addAllNumbers() {
+    arr = [45, 1, 6, 7, 9]
+    output.innerHTML = arr.reduce()
+}
+//come back to this later
 function getDomain() {
     let str = input.value 
     let regex = /^.*[a-zA-Z]+.*$/i;
