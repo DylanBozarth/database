@@ -28,5 +28,7 @@ returnString += ('*')
     
  
 }
-
+function getDomain() {
+    
+}
 
