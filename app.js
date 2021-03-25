@@ -13,20 +13,27 @@ function testIt() {
 function email() {
   let str = input.value  
   let splitEmail = str.split("@")
-  if (str.indexOf('@') === -1) {
-        output.innerHTML = 'Use a real email, retard'
-    }
-    else {
+  
+  
         let returnString = ''
     
     for (i = 1; i < str.length; i++) {
 returnString += ('*')
     }
     output.innerHTML = str[0] + returnString + splitEmail[1]
-    }
-    
-    
- 
+}
+const EmailHidePromise = (input) => {
+    return new Promise ((resolve, reject) => {
+        let str = input.value
+if (str.indexOf('@' > -1)) {
+    resolve (
+email(str)
+    )
+}
+        else 
+            reject(output.innerHTML = 'Use a real email, retard')
+        
+    })
 }
 const onMyBirthday = (isKayoSick) => {
     return new Promise((resolve, reject) => {
