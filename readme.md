@@ -1,0 +1,1 @@
+This is my playground for new ideas. The only reason this repo exists is to test new things that I cannot put in to existing projects. 

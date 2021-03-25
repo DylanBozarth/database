@@ -24,6 +24,9 @@ function email() {
   }
   output.innerHTML = str[0] + returnString + splitEmail[1];
 }
+EmailHidePromise.then(() => {
+  console.log('THEN')
+})
 //come back to this later
 function getDomain() {
   let str = input.value;
