@@ -28,10 +28,17 @@ returnString += ('*')
     
  
 }
-function addAllNumbers() {
-    arr = [45, 1, 6, 7, 9]
-    output.innerHTML = arr.reduce()
-}
+const onMyBirthday = (isKayoSick) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (!isKayoSick) {
+          resolve(2);
+        } else {
+          reject(new Error("I am sad"));
+        }
+      }, 2000);
+    });
+  };
 //come back to this later
 function getDomain() {
     let str = input.value 
