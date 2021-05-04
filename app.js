@@ -33,3 +33,15 @@ function getDomain() {
   let regex = /^.*[a-zA-Z]+.*$/i;
   return regex.test(str);
 }
+function isPalindrome(x) {
+  let flip = x.toString();
+  let testme = flip.split('').reverse().join('')
+ let newnumber = parseInt(testme)
+if (newnumber === x) {
+   return true
+}
+  else {
+      return false
+  }
+};
+isPalindrome(111)
