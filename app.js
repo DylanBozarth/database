@@ -45,3 +45,15 @@ if (newnumber === x) {
   }
 };
 isPalindrome(111)
+
+
+function occurances() {
+  let str = input.value;
+  let splitString = str.split('')
+let returnStuff = {}
+for (var i = 0; i < splitString.length; i++) {
+  var count = (str.match(/[i]/g) || []).length;
+  console.log(count)
+}
+  output.innerHTML = splitString
+}
