@@ -1,14 +1,3 @@
-const Add = (a:number ,b:number) => {
-    return a + b
-}
-Add(1, 7);
-const output: Element | null = document.querySelector("#span")
-
-function returnRandomQuote(quotes:JSON) {
-  if (output !== null) {
-    output.innerHTML = "Cheese" //(quotes[Math.floor(Math.random() * 43)]);
-  }
-}
 let starList = [
   "Red-Giant",
   "Red-Supergiant",
@@ -18,12 +7,29 @@ let starList = [
   "Red-Dwarf",
   "Brown-Dwarf",
 ];
+let planetList = [
+  "Rocky",
+  "Temperate",
+  "Ocean",
+  "Frozen",
+  "Lava",
+  "Gas"
+];
+const lengthOfStarList = starList.length;
+const lengthOfPlanetList = planetList.length;
 const letThereBeLight = () => {
-let universe = []
-const starNumber = 5;
-for (let i = 0; i < starNumber; i++) {
-  universe.push(starList[Math.floor(Math.random() * 6)])
+  let universe = []
+  const starNumber = 5;
+  let randomNumberOfPlanets = Math.floor(Math.random() * 6);
+  for (let i = 0; i < starNumber; i++) {
+    universe.push({
+      systemStar: starList[Math.floor(Math.random() * lengthOfStarList)],
+      systemPlanets: [planetList[Math.floor(Math.random() * lengthOfPlanetList)]]
+    })
+
+  }
+
+  console.log(universe)
 }
 
-console.log(universe)
-}
+//starList[Math.floor(Math.random() * 6)]
